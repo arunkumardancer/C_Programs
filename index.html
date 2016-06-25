@@ -19,105 +19,29 @@
     </section>
 
     <section class="main-content">
-      <p></p><div>
-<b>Write a C program to enter number of rows and print pascal triangle till N rows by calculating binomial coefficients.<br>
-Wap in C to print pascal triangle using for loop and function.<br>
-Algorithm to print pascal triangle.
-</b>
-</div><br>
+      <div>
 
-<img src="http://3.bp.blogspot.com/--MWuK9sclgQ/VkhQKCgciqI/AAAAAAAAAWA/DogaJTXIuTw/s1600/Capture.JPG" alt="Pascal triangle">
+    LINKED LIST
 
-
-<h4 id="myH4">
-<a id="required-knowledge" class="anchor" href="#required-knowledge" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Required Knowledge</h4>
-
-<ul>
-<li><a href="http://www.techcrashcourse.com/2015/05/c-programming-printf-scanf-function.html" title="printf and scanf function of stdio.h">C printf and scanf functions</a></li>
-<li><a href="http://www.techcrashcourse.com/2015/05/c-programming-for-loop.html" title="For loop in C">For loop in C</a></li>
-<li><a href="http://www.techcrashcourse.com/2015/05/c-programming-language-functions.html" title="Functions in C">Functions in C</a></li>
-</ul> 
-
-
-
-<p>
-<b>Pascal Triangle</b> is a regular triangle of binomial coefficients. The counting of rows of the pascal triangle starts with 0 from top to bottom and elements in any particular row are numbered from left to right starting from 0.<br>
-Here is the formulae to find the value of n<sup>th</sup> element of r<sup>th</sup> row of pascal triangle.
-</p>
-
-<p></p>
-<img src="http://4.bp.blogspot.com/-SYkkjmeFnnE/VkhFqghTohI/AAAAAAAAAVw/sv2f6ryDUPI/s1600/Pascal_triangle.jpg" alt="Pascal triangle formulae">
-
-
-<hr>
-
-<h2 id="myH2">
-<a id="c-program-to-print-pascal-triangle-till-n-rows" class="anchor" href="#c-program-to-print-pascal-triangle-till-n-rows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>C program to print pascal triangle till N rows</h2>
-
- 
-
-<pre>
-#include &lt;stdio.h&gt;  
-  
-int getFactorial(int n);  
-  
-int main() {  
-    int row, rows, i, value;
-  
-    printf("Enter Number of Rows of Pascal Triangle\n");  
-    scanf("%d", &amp;rows);  
-  
-    for(row = 0; row &lt; rows; row++) {  
-        /* Print Spaces for every row */   
-        for(i = row; i &lt;= rows; i++)  
-            printf("  ");  
-  
-        for(i = 0; i &lt;= row; i++) {  
-            value = getFactorial(row)/(getFactorial(i)*getFactorial(row-i));  
-            printf("%4d", value);  
-        }  
-  
-        printf("\n");  
-    }  
-  
-    return 0;  
-}  
-  
-/*
- * Function to calculate factorial of a number 
- */
-int getFactorial(int N){
-    if(N &lt; 0){
-        printf("Invalid Input: factorial not defined for \
-negative numbers\n");
-        return 0;
-    }
-    int nFactorial = 1, counter;
-    /*  N! = N*(N-1)*(N-2)*(N-3)*.....*3*2*1  */
-    for(counter = 1; counter &lt;= N; counter++){
-        nFactorial = nFactorial * counter;
-    }    
-    return nFactorial;
-}
-</pre>
-
- 
-
-
-
-<p>Output</p>
-
-<pre>
-Enter Number of Rows of Pascal Triangle
-5
-      1
-     1 1
-    1 2 1
-   1 3 3 1
-  1 4 6 4 1
-</pre>
-
-
+<br>
+<a href="http://www.techcrashcourse.com/2016/06/inserting-node-at-front-and-end-linked-list.html" title="Adding a node in linked list">Inserting a node at front and end of linked List</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/Insert-a-node-after-given-node-in-linked-list.html" title="Adding a node after given node in linked list">Inserting a node after a given node in linked List</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/find-length-of-linked-list-loop-and-recursion.html" title="Find length of Linked list">Find Length of a Linked List using Loop and Recursion</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/delete-node-from-singly-linked-list.html" title="Deleting a node from Linked list">Delete a Node from a Singly Linked List</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/program-to-reverse-linked-list-iteration-recursion.html" title="Reverse a Linked list">Program to Reverse a Linked List using Loop and Recursion</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/print-linked-list-in-reverse-order-recursion.html" title="Print a linked list in Reverse order">Print a Linked List in Reverse Order using Recursion</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/merge-two-sorted-linked-list.html" title="Merge two sorted Linked List">Merge Two Sorted Linked List</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/program-to-delete-a-linked-list.html" title="Delete all nodes of Linked List">Write a 
+Program to Delete a Linked list</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/program-to-check-linked-list-palindrome.html" title="Check palindrome linked list">Program to Check if a Singly Linked List is Palindrome</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/program-print-alternate-nodes-of-linked-list.html" title="Print alternate nodes of linked list">Program to Print Alternate Nodes of Linked List</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/find-nth-node-from-end-of-linked-list.html" title="Nth element from end of linked list">Program to Find Nth Node from the End of a Linked List</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/program-to-find-middle-node-of-linked-list.html" title="C Program to Find Middle Node of a Linked List">C Program to Find Middle Node of a Linked List</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/program-convert-singly-linked-list-to-circular-linked-list.html" title="Convert a Singly Linked List to Circular Linked List">Convert a Singly Linked List to Circular Linked List</a><br><a href="http://www.techcrashcourse.com/2016/06/program-to-search-element-in-linked-list-list-recursion.html" title="Search an element in Linked List">Program to Search an Element in Linked List using Loop and Recursion</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/c-program-implement-stack-using-linked-list.html" title="Stack implementation using Singly Linked List">C Program to Implement a Stack using Singly Linked List</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/program-union-and-intersection-of-two-linked-lists.html" title="Union and Intersection of Linked List">Find Union and Intersection of Two Linked List</a><br>
+<a href="http://www.techcrashcourse.com/2016/06/program-to-find-loop-in-linked-list.html" title="Find Cycle in a Linked List">C Program to Find Cycle in a Linked List</a><br>
+</div>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/arunkumardancer/C_Programs">My All C Programs</a> is maintained by <a href="https://github.com/arunkumardancer">arunkumardancer</a>.</span>
