@@ -1,0 +1,97 @@
+<div>
+<b>Write a C program to print all negative numbers of an array using for loop.<br/>
+How to print all negative elements of an integer array in C.
+</b>
+</div><br/>
+<h4 id = "myH4">Required Knowledge</h4>
+<ul>
+<li><a href="http://www.techcrashcourse.com/2015/05/c-programming-printf-scanf-function.html" title="printf and scanf function of stdio.h">C printf and scanf functions</a></li>
+<li><a href="http://www.techcrashcourse.com/2015/05/c-programming-for-loop.html" title="For loop in C">For loop in C</a></li>
+<li><a href="http://www.techcrashcourse.com/2015/05/c-programming-arrays.html" title="Arrays in C">Arrays in C</a></li>
+</ul>
+<br/>
+<div class="alert alert-info">
+<strong>Algorithm to print negative numbers of an array</strong><br/>
+<!-- UnOrdered Items Html Starts -->
+<em>
+Let inputArray is an integer array having N elements.
+<ul>
+  <li>Using a for loop, traverse inputArray from index 0 to N-1.</li>
+  <li>For every element inputArray[i], check whether it is negative number or not(inputArray[i] < 0) and print it accordingly.</li>
+</ul>
+</em>
+<!-- UnOrdered Items Html Ends -->
+</div>
+<!-- Paragraph HTML Ends Here -->
+<hr/>
+<h2 id="myH2">C program to print all negative elements of an array</h2>
+<!-- SyntaxHighllighter HTML Starts here --> 
+<pre class="brush: cpp;toolbar: false; gutter: true;">
+#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+ 
+int main(){
+    int inputArray[100], elementCount, counter;
+     
+    printf(&quot;Enter Number of Elements in Array\n&quot;);
+    scanf(&quot;%d&quot;, &amp;elementCount);
+    printf(&quot;Enter %d numbers \n&quot;, elementCount);
+    
+    /* Read array elements */
+    for(counter = 0; counter &lt; elementCount; counter++){
+        scanf(&quot;%d&quot;, &amp;inputArray[counter]);
+    }
+       
+    /* Iterate form index 0 to elementCount-1 and 
+       check for negative numbers */
+    printf(&quot;Negative Elements in Array\n&quot;);
+    for(counter = 0; counter &lt; elementCount; counter++){
+        if(inputArray[counter] &lt; 0) {
+            printf(&quot;%d &quot;, inputArray[counter]);
+        }
+    }
+         
+    getch();
+    return 0;
+}
+</pre>
+<!-- SyntaxHighllighter HTML Ends here --> 
+<!-- Program Output Starts -->
+Output
+<pre>
+Enter Number of Elements in Array
+8
+Enter 8 numbers
+2 -4 9 10 0 -5 -1 1
+Negative Elements in Array
+-4 -5 -1
+</pre>
+<!-- Program Output Ends -->
+<table class="table table-bordered">
+   <tbody>
+      <tr class="active">
+         <td class="myRelatedItems"><a href="http://www.techcrashcourse.com/2014/10/c-program-find-palindrome-string.html">C program to check string is palindrome</a></td>
+      </tr>
+      <tr class="warning">
+         <td class="myRelatedItems"><a href="http://www.techcrashcourse.com/2014/10/c-program-check-armstrong-number.html">C program to check armstrong number</a></td>
+      </tr>
+      <tr  class="active">
+         <td class="myRelatedItems"><a href="http://www.techcrashcourse.com/2014/10/c-program-to-generate-fibonacci-series.html">C Program to print fibonacci series</a></td>
+      </tr>
+      <tr  class="warning">
+         <td class="myRelatedItems"><a href="http://www.techcrashcourse.com/2014/11/c-program-convert-string-to-integer-atoi.html">C program to convert string to integer</a></td>
+      </tr>
+      <tr  class="active">
+         <td class="myRelatedItems"><a href="http://www.techcrashcourse.com/2014/10/c-program-find-palindrome-string.html">C program to check string is palindrome</a></td>
+      </tr>
+      <tr  class="warning">
+         <td class="myRelatedItems"><a href="http://www.techcrashcourse.com/2014/11/c-program-find-substring-of-string.html">C program to find a substring from a given string</a></td>
+      </tr>
+      <tr  class="active">
+         <td class="myRelatedItems"><a href="http://www.techcrashcourse.com/2014/10/c-program-find-hcf-and-lcm.html">C program to find hcf and lcm of two numbers</a></td>
+      </tr>
+      <tr  class="warning">
+         <td class="myRelatedItems"><a href="http://www.techcrashcourse.com/2014/10/c-program-examples.html">List of all C programs</a></td>
+      </tr>
+   </tbody>
+</table>
